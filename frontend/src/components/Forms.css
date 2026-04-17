@@ -1,0 +1,484 @@
+/* CSS FOR - FORMS(LOGIN & REGISTER), ABOUT,  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'DM Sans';
+}
+
+.form-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #060F1A;
+}
+
+.form-content {
+  max-width: 400px;
+  width: 100%;
+}
+
+.form-title {
+  font-family: Wittgenstein;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #EAE4CC;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #EAE4CC;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: 'DM Sans';
+  font-size: 1rem;
+  border: 1px solid #EAE4CC;
+  background-color: #EAE4CC;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-input::placeholder {
+  color: #4e4e4e;
+  font-family: 'DM Sans';
+  font-size: 0.95rem;
+}
+
+/* Password & eye styling */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper .form-input {
+  width: 100%;
+  padding-right: 42px;  
+}
+
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: #888;
+  font-size: 16px;
+  user-select: none;
+}
+
+.eye-icon:hover {
+  color: #333;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  background: #060F1A;
+  color: white;
+  border: 1px solid #EAE4CC;
+  font-family: 'DM Sans';
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  border: 2px solid #EAE4CC;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: rgba(240, 237, 232, 0.45);
+  font-family: 'DM Sans';
+  font-size: 0.95rem;
+}
+
+.form-link {
+  color: #EAE4CC;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.image-section {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ABOUT PAGE */
+.about-page {
+  font-family: 'DM Sans';
+  color: #1a1a1a;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #060F1A;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.section-tag.light {
+  color: #EAE4CC;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060F1A;
+  overflow: hidden;
+}
+
+.about-hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.about-hero-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #EAE4CC;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.about-hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(240, 237, 232, 0.45);
+}
+
+.mission-section {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mission-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #060F1A;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.mission-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.mission-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: #060F1A;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-family: 'Wittgenstein';
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #EAE4CC;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.story-section {
+  padding: 6rem 0;
+  background-color: #060F1A;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.image-frame {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(87, 44, 27, 0.2);
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.image-frame:hover img {
+  transform: scale(1.05);
+}
+
+.story-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #EAE4CC;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.story-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(254, 253, 252, 0.598);
+  margin-bottom: 1.5rem;
+}
+
+.values-section {
+  padding: 6rem 0;
+  color: rgba(254, 253, 252, 0.598);
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.values-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #EAE4CC;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+  background: #060F1A;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #EAE4CC;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #EAE4CC;
+}
+
+.value-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #EAE4CC;
+}
+
+.value-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.artist-cta {
+  padding: 6rem 0;
+  background-color: white;
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Wittgenstein', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #060F1A;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #572C1B;
+  color: #EAE4CC;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #000;
+}
+
+/* Responsiveness */
+@media (max-width: 968px) {
+  .mission-grid,
+  .story-grid,
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mission-stats {
+    order: -1;
+  }
+
+  .about-hero-title {
+    font-size: 3rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+  
+  .image-section {
+    display: none;
+  }
+  
+  .form-section {
+    padding: 1.5rem;
+  }
+  
+  .form-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .about-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .mission-title,
+  .story-title,
+  .values-title,
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .mission-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}

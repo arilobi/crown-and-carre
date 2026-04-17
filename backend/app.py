@@ -22,7 +22,7 @@ CORS(app)
 app.secret_key = os.getenv("JWT_SECRET_KEY") or "dev-secret-key"
 
 # Database config
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///art.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://art_e_commerce_user:DfVq61hCl9qG4e1mN4JA8Ixv5DJpnNeG@dpg-d7h32tegvqtc73et298g-a.oregon-postgres.render.com/art_e_commerce')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)

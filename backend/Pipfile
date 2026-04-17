@@ -10,6 +10,11 @@ flask-jwt-extended = "*"
 flask-limiter = "*"
 google-auth-oauthlib = "*"
 google-api-python-client = "*"
+psycopg2-binary = "*"
+flask = "*"
+flask-cors = "*"
+python-dotenv = "*"
+gunicorn = "*"
 
 [dev-packages]
 

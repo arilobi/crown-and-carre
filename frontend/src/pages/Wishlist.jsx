@@ -31,7 +31,7 @@ export default function Wishlist() {
                     <div key={item.id} className="wish-card">
                         <div className="wish-card-img-wrapper">
                             <img
-                                src={`http://127.0.0.1:5000/static/uploads/${item.image_filename}`}
+                                src={`https://crown-and-carre.onrender.com/static/uploads/${item.image_filename}`}
                                 alt={item.name}
                                 className="wish-card-img"
                             />

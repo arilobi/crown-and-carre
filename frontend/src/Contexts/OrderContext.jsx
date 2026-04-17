@@ -13,7 +13,7 @@ export const OrderProvider = ({ children }) => {
 
     // FETCH ALL ORDERS (admin)
     const fetchAllOrders = () => {
-        fetch("http://127.0.0.1:5000/orders", {
+        fetch("https://crown-and-carre.onrender.com/orders", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -30,7 +30,7 @@ export const OrderProvider = ({ children }) => {
     // FETCH USER ORDERS
     const fetchUserOrders = () => {
         if (!authToken) return;
-        fetch("http://127.0.0.1:5000/orders/user", {
+        fetch("https://crown-and-carre.onrender.com/orders/user", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -58,7 +58,7 @@ export const OrderProvider = ({ children }) => {
         setTimeout(() => {
             Promise.all(
                 unpaidOrders.map(order =>
-                    fetch(`http://127.0.0.1:5000/orders/${order.id}`, {
+                    fetch(`https://crown-and-carre.onrender.com/orders/${order.id}`, {
                         method: "DELETE",
                         headers: {
                             "Content-type": "application/json",
@@ -85,7 +85,7 @@ export const OrderProvider = ({ children }) => {
 
     // CANCEL AN ORDER
     const cancelOrder = (order_id) => {
-        fetch(`http://127.0.0.1:5000/orders/${order_id}`, {
+        fetch(`https://crown-and-carre.onrender.com/orders/${order_id}`, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json",

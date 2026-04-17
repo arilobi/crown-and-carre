@@ -15,7 +15,7 @@ export const UserProvider = ({ children }) => {
   const login = (email, password) => {
     const toastId = toast.loading("Logging you in...");
 
-    fetch("http://127.0.0.1:5000/login", {
+    fetch("https://crown-and-carre.onrender.com/login", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -48,7 +48,7 @@ export const UserProvider = ({ children }) => {
   const logout = () => {
     const toastId = toast.loading("Logging out...");
 
-    fetch("http://127.0.0.1:5000/logout", {
+    fetch("https://crown-and-carre.onrender.com/logout", {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
@@ -76,7 +76,7 @@ export const UserProvider = ({ children }) => {
 
   // FETCH CURRENT USER
   const fetchCurrentUser = () => {
-    fetch("http://127.0.0.1:5000/current_user", {
+    fetch("https://crown-and-carre.onrender.com/current_user", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -114,7 +114,7 @@ export const UserProvider = ({ children }) => {
   const addUser = (name, email, password) => {
     const toastId = toast.loading("Registering...");
 
-    fetch("http://127.0.0.1:5000/users", {
+    fetch("https://crown-and-carre.onrender.com/users", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ name, email, password }),
@@ -138,7 +138,7 @@ export const UserProvider = ({ children }) => {
 
   // FETCH ALL USERS
   const fetchAllUsers = () => {
-    fetch("http://127.0.0.1:5000/users", {
+    fetch("https://crown-and-carre.onrender.com/users", {
         method: "GET",
         headers: {
             "Content-type": "application/json",
@@ -157,7 +157,7 @@ export const UserProvider = ({ children }) => {
   const updateUser = (user_id, updatedName, updatedEmail) => {
     const toastId = toast.loading("Updating user...");
 
-    fetch(`http://127.0.0.1:5000/users/${user_id}`, {
+    fetch(`https://crown-and-carre.onrender.com/users/${user_id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
@@ -186,7 +186,7 @@ export const UserProvider = ({ children }) => {
   const adminDeleteUser = (user_id) => {
     const toastId = toast.loading("Deleting user...");
 
-    fetch(`http://127.0.0.1:5000/users/${user_id}`, {
+    fetch(`https://crown-and-carre.onrender.com/users/${user_id}`, {
         method: "DELETE",
         headers: {
             "Content-type": "application/json",
@@ -212,7 +212,7 @@ export const UserProvider = ({ children }) => {
   const deleteUser = (user_id) => {
     const toastId = toast.loading("Deleting user...");
 
-    fetch(`http://127.0.0.1:5000/users/${user_id}`, {
+    fetch(`https://crown-and-carre.onrender.com/users/${user_id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

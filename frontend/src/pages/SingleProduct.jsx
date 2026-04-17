@@ -32,7 +32,7 @@ export default function SingleProduct() {
 
     // Fetch single product
     useEffect(() => {
-        fetch(`http://127.0.0.1:5000/products/${id}`)
+        fetch(`https://crown-and-carre.onrender.com/products/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data.id) {
@@ -59,7 +59,7 @@ export default function SingleProduct() {
         }
 
         setOrdering(true);
-        fetch("http://127.0.0.1:5000/orders", {
+        fetch("https://crown-and-carre.onrender.com/orders", {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
@@ -118,7 +118,7 @@ export default function SingleProduct() {
             {/* Image */}
             <div className="sp-img-wrapper">
                 <img
-                    src={`http://127.0.0.1:5000/static/uploads/${product.image_filename}`}
+                    src={`https://crown-and-carre.onrender.com/static/uploads/${product.image_filename}`}
                     alt={product.name}
                     className="sp-img"
                 />

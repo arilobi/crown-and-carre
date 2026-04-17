@@ -41,7 +41,7 @@ export default function Store(){
                             style={{ cursor: "pointer" }}
                         >
                             <img
-                                src={`http://127.0.0.1:5000/static/uploads/${product.image_filename}`}
+                                src={`https://crown-and-carre.onrender.com/static/uploads/${product.image_filename}`}
                                 alt={product.name}
                                 className="store-card-img"
                             />

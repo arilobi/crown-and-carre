@@ -15,7 +15,7 @@ export const ProductProvider = ({ children }) => {
 
     // FETCH ALL PRODUCTS
     useEffect(() => {
-        fetch("http://127.0.0.1:5000/products", {
+        fetch("https://crown-and-carre.onrender.com/products", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -42,7 +42,7 @@ export const ProductProvider = ({ children }) => {
             formData.append("image_filename", image_filename);
         }
 
-        fetch("http://127.0.0.1:5000/products", {
+        fetch("https://crown-and-carre.onrender.com/products", {
             method: "POST",
             headers: { Authorization: `Bearer ${authToken}` },
             body: formData,
@@ -69,7 +69,7 @@ export const ProductProvider = ({ children }) => {
     const updateProduct = (product_id, updatedName, updatedDescription, updatedPrice, updatedAvailability) => {
         const toastId = toast.loading("Updating product...");
 
-        fetch(`http://127.0.0.1:5000/products/${product_id}`, {
+        fetch(`https://crown-and-carre.onrender.com/products/${product_id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -103,7 +103,7 @@ export const ProductProvider = ({ children }) => {
     const deleteProduct = (id) => {
         const toastId = toast.loading("Deleting product...");
 
-        fetch(`http://127.0.0.1:5000/products/${id}`, {
+        fetch(`https://crown-and-carre.onrender.com/products/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json",
@@ -130,7 +130,7 @@ export const ProductProvider = ({ children }) => {
     // FETCH WISHLIST
     useEffect(() => {
         if (!authToken) return;
-        fetch("http://127.0.0.1:5000/wishlist", {
+        fetch("https://crown-and-carre.onrender.com/wishlist", {
             method: "GET",
             headers: {
                 "Content-type": "application/json",
@@ -146,7 +146,7 @@ export const ProductProvider = ({ children }) => {
 
     // ADD TO WISHLIST
     const addToWishlist = (product_id) => {
-        fetch("http://127.0.0.1:5000/wishlist", {
+        fetch("https://crown-and-carre.onrender.com/wishlist", {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
@@ -168,7 +168,7 @@ export const ProductProvider = ({ children }) => {
 
     // REMOVE FROM WISHLIST
     const removeFromWishlist = (wishlist_id) => {
-        fetch(`http://127.0.0.1:5000/wishlist/${wishlist_id}`, {
+        fetch(`https://crown-and-carre.onrender.com/wishlist/${wishlist_id}`, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json",
@@ -189,7 +189,7 @@ export const ProductProvider = ({ children }) => {
 
     // CLEAR WISHLIST
     const clearWishlist = () => {
-        fetch("http://127.0.0.1:5000/wishlist/clear", {
+        fetch("https://crown-and-carre.onrender.com/wishlist/clear", {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json",

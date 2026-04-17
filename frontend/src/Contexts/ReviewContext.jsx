@@ -12,7 +12,7 @@ export const ReviewProvider = ({ children }) => {
 
     // FETCH REVIEWS FOR A PRODUCT
     const fetchProductReviews = (product_id) => {
-        fetch(`http://127.0.0.1:5000/reviews/product/${product_id}`)
+        fetch(`https://crown-and-carre.onrender.com/reviews/product/${product_id}`)
             .then((res) => res.json())
             .then((data) => {
                 if (data.reviews) {
@@ -26,7 +26,7 @@ export const ReviewProvider = ({ children }) => {
 
     // ADD A REVIEW
     const addReview = (product_id, rating, comment) => {
-        fetch("http://127.0.0.1:5000/reviews", {
+        fetch("https://crown-and-carre.onrender.com/reviews", {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
@@ -48,7 +48,7 @@ export const ReviewProvider = ({ children }) => {
 
     // UPDATE A REVIEW
     const updateReview = (review_id, rating, comment) => {
-        fetch(`http://127.0.0.1:5000/reviews/${review_id}`, {
+        fetch(`https://crown-and-carre.onrender.com/reviews/${review_id}`, {
             method: "PATCH",
             headers: {
                 "Content-type": "application/json",
@@ -70,7 +70,7 @@ export const ReviewProvider = ({ children }) => {
 
     // DELETE A REVIEW
     const deleteReview = (review_id) => {
-        fetch(`http://127.0.0.1:5000/reviews/${review_id}`, {
+        fetch(`https://crown-and-carre.onrender.com/reviews/${review_id}`, {
             method: "DELETE",
             headers: {
                 "Content-type": "application/json",

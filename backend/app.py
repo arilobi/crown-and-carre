@@ -107,7 +107,7 @@ def google_callback():
         "role": user.role
     }
 
-    return redirect("https://spacesbook.vercel.app/login")
+    return redirect("https://crown-and-carre.onrender.com/login")
 
 def credentials_to_dict(credentials):
     return {

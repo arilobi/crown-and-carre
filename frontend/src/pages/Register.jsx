@@ -10,13 +10,14 @@ export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [role, setRole] = useState("Client");
   const [password, setPassword] = useState("");
 
   // HANDLE FORM SUBMISSION
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    addUser(name, email, password)
+    addUser(name, email, password, role)
   };
 
   return (
@@ -71,6 +72,20 @@ export default function Register() {
               >
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
+            </div>
+
+             {/* Role */}
+            <div className="form-group">
+              <label htmlFor="role">Role</label>
+              <select
+                id="role"
+                value={role}
+                onChange={(e) => setRole(e.target.value)}
+                className="form-input"
+              >
+                <option value="Client">Client</option>
+                <option value="Admin">Admin</option>
+              </select>
             </div>
 
             {/* GOOGLE */}

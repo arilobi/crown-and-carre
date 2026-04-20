@@ -29,6 +29,10 @@ export default function Navbar() {
   const isLoggedIn = !!authToken;
   const isAdmin = current_user?.role?.toLowerCase() === "admin";
 
+  // ← add here
+  console.log("current_user:", current_user);
+  console.log("isAdmin:", isAdmin);
+
   // To change color when scrolling down for visibility
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
@@ -49,6 +53,8 @@ export default function Navbar() {
     : isAdmin
       ? ADMIN_LINKS
       : LOGGED_IN_LINKS;
+
+
 
   return (
     <>

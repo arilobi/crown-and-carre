@@ -93,6 +93,7 @@ export const UserProvider = ({ children }) => {
         return response.json();
       })
       .then((response) => {
+        console.log("fetchCurrentUser response:", response); 
         if (!response) return;
         if (response.email) {
           setCurrentUser(response);
@@ -111,19 +112,19 @@ export const UserProvider = ({ children }) => {
   }, [authToken]);
 
   // REGISTER
-  const addUser = (name, email, password) => {
+  const addUser = (name, email, password, role = "Client") => {
     const toastId = toast.loading("Registering...");
 
     fetch("https://crown-and-carre.onrender.com/users", {
       method: "POST",
       headers: { "Content-type": "application/json" },
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ name, email, password, role }),
     })
       .then((resp) => resp.json())
       .then((response) => {
         if (response.message) {
           toast.update(toastId, { render: "Registered successfully!", type: "success", isLoading: false, autoClose: 3000 });
-          navigate("/store");
+          navigate("/login");
         } else if (response.error) {
           toast.update(toastId, { render: response.error, type: "error", isLoading: false, autoClose: 3000 });
         } else {

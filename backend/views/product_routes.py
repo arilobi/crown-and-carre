@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import Product, db, Wishlist
+from models import Product, db, Wishlist, Order, Review
 from werkzeug.utils import secure_filename
 import logging
 import os
@@ -146,11 +146,22 @@ def delete_product(id):
     product = Product.query.get(id)
     if not product:
         return jsonify({"error": "Product not found"}), 404
-
+    
+    try:
     # This will delete the wishlist rows first before removing the product that prevents foreign key constraint errors
-    Wishlist.query.filter_by(product_id=id).delete()
+        Wishlist.query.filter_by(product_id=id).delete()
 
-    db.session.delete(product)
-    db.session.commit()
+    #  Delete linked orders and reviews
+        Order.query.filter_by(product_id=id).delete()
+        Review.query.filter_by(product_id=id).delete()
 
-    return jsonify({"message": f"Product '{product.name}' deleted successfully"}), 200
+        db.session.delete(product)
+        db.session.commit()
+
+        return jsonify({"message": f"Product '{product.name}' deleted successfully"}), 200
+    
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({"error": str(e)}), 500
+
+    

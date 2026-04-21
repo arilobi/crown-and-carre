@@ -56,7 +56,7 @@ const NoPage = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#060F1A',  
+      backgroundColor: '#8F5E68',  
       padding: '120px 2rem 2rem',  
       boxSizing: 'border-box',
     },
@@ -95,7 +95,7 @@ const NoPage = () => {
     paragraph: {
       fontFamily: "'DM Sans', sans-serif",
       fontSize: '1.2rem',
-      color: '#666',  
+      color: '#EBE6E6',  
       marginBottom: '3rem',
       maxWidth: '450px',
       marginLeft: 'auto',

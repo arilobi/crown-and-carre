@@ -75,7 +75,7 @@ export default function Register() {
             </div>
 
              {/* Role */}
-            <div className="form-group">
+            {/* <div className="form-group">
               <label htmlFor="role">Role</label>
               <select
                 id="role"
@@ -86,7 +86,7 @@ export default function Register() {
                 <option value="Client">Client</option>
                 <option value="Admin">Admin</option>
               </select>
-            </div>
+            </div> */}
 
             {/* GOOGLE */}
 

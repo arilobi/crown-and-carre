@@ -1,4 +1,5 @@
 import cover2 from "../assets/cover2.jpg";
+import formImage2 from "../assets/formImage2.jpg";
 import p1 from "../assets/p1.png";
 import p2 from "../assets/p2.png";
 import p3 from "../assets/p3.png";
@@ -105,7 +106,7 @@ export default function LandingPage() {
     <>
       {/* Hero section */}
       <div className="hero-video animate-fadeUp">
-        <img src={cover2} alt="Painting of three women" />
+        <img src={formImage2} alt="Painting of three women" />
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
@@ -144,10 +145,10 @@ export default function LandingPage() {
         <div className="best-sellers">
           <div className="best-section">
             {[
-              { img: p1, alt: "Afternoon Tea", title: "Afternoon Tea" },
-              { img: p2, alt: "Swan Lake", title: "Swan Lake" },
-              { img: p3, alt: "The Montrea Women", title: "The Montrea Women" },
-              { img: p4, alt: "Riding The Sun", title: "Riding The Sun" }
+              { img: p1, alt: "The Montrea Women", title: "The Montrea Women" },
+              { img: p4, alt: "Afternoon Tea", title: "Afternoon Tea" },
+              { img: p3, alt: "Swan Lake", title: "The Swan Lake" },
+              { img: p2, alt: "Riding The Sun", title: "Riding The Sun" }
             ].map((item, index) => (
               <div 
                 key={index}

@@ -56,7 +56,7 @@ export default function Orders() {
                                     <tr key={order.id}>
                                         <td>
                                             <img
-                                                src={`http://127.0.0.1:5000/static/uploads/${order.product_image}`}
+                                                src={`https://crown-and-carre.onrender.com/static/uploads/${order.product_image}`}
                                                 alt={order.product_name}
                                                 className="mo-table-img"
                                             />

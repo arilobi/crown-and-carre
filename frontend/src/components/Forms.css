@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: #060F1A;
+  background-color: #8F5E68;
 }
 
 .form-content {
@@ -31,7 +31,7 @@
   font-family: Wittgenstein;
   font-size: 2.5rem;
   font-weight: 400;
-  color: #EAE4CC;
+  color: #EBE6E6;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -44,7 +44,7 @@
   display: block;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #EAE4CC;
+  color: #EBE6E6;
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
 }
@@ -110,7 +110,8 @@ select.form-input {
   padding: 0.9rem 1rem;
   background: #060F1A;
   color: white;
-  border: 1px solid #EAE4CC;
+  border: none;
+  /* border: 1px solid #EAE4CC; */
   font-family: 'DM Sans';
   font-size: 1rem;
   font-weight: 500;
@@ -119,7 +120,8 @@ select.form-input {
 }
 
 .submit-btn:hover {
-  border: 2px solid #EAE4CC;
+  border: 2px solid #EBE6E6;
+  background: #8F5E68;
 }
 
 .form-footer {
@@ -131,7 +133,7 @@ select.form-input {
 }
 
 .form-link {
-  color: #EAE4CC;
+  color: #EBE6E6;
   font-weight: 500;
   text-decoration: none;
   margin-left: 0.3rem;
@@ -159,7 +161,7 @@ select.form-input {
 /* ABOUT PAGE */
 .about-page {
   font-family: 'DM Sans';
-  color: #1a1a1a;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -175,13 +177,13 @@ select.form-input {
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #060F1A;
+  color: #333333b7;
   display: inline-block;
   margin-bottom: 1rem;
 }
 
 .section-tag.light {
-  color: #EAE4CC;
+  color: #333333b7;
 }
 
 /* Hero Section */
@@ -266,7 +268,7 @@ select.form-input {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  background-color: #060F1A;
+  background-color: #8F5E68;
   padding: 2rem;
   border-radius: 12px;
 }
@@ -280,20 +282,20 @@ select.form-input {
   font-family: 'Wittgenstein';
   font-size: 2.5rem;
   font-weight: 500;
-  color: #EAE4CC;
+  color: #EBE6E6;
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
   font-size: 0.9rem;
-  color: #666;
+  color: #EBE6E6;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .story-section {
   padding: 6rem 0;
-  background-color: #060F1A;
+  background-color: #8F5E68;
 }
 
 .story-grid {
@@ -325,7 +327,7 @@ select.form-input {
   font-family: 'Wittgenstein', serif;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #EAE4CC;
+  color: #EBE6E6;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -351,7 +353,7 @@ select.form-input {
   font-family: 'Wittgenstein', serif;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #EAE4CC;
+  color: #333;
 }
 
 .values-grid {
@@ -363,27 +365,26 @@ select.form-input {
 .value-card {
   text-align: center;
   padding: 2rem;
-  background: #060F1A;
+  background: #8F5E68;
   border-radius: 12px;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .value-card:hover {
   transform: translateY(-5px);
-  border: 1px solid #EAE4CC;
 }
 
 .value-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #EAE4CC;
+  color: #EBE6E6;
 }
 
 .value-title {
   font-family: 'Wittgenstein', serif;
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
-  color: #EAE4CC;
+  color: #EBE6E6;
 }
 
 .value-text {
@@ -402,7 +403,7 @@ select.form-input {
   font-family: 'Wittgenstein', serif;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #060F1A;
+  color: #333333b7;
   margin-bottom: 1rem;
 }
 

@@ -11,7 +11,7 @@ body{
   margin: 0 !important;
   padding: 0 !important;
   /* background: #FBF4F4; */
-  background: #EAE4CC;
+  background: #EBE6E6;
   overflow-x: hidden;
   overflow-y: auto;
   -ms-overflow-style: none;
@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity: 0.3 = lighter, 0.7 = darker */
+  background: rgba(0, 0, 0, 0.1); /* Adjust opacity: 0.3 = lighter, 0.7 = darker */
   z-index: 1;
 }
 
@@ -160,7 +160,7 @@ body::-webkit-scrollbar {
 }
 .best-sellers-header h1 {
   /* color: #060F1A; */
-  color: #EAE4CC;
+  color: #000;
   font-family: 'Wittgenstein', serif;
   font-weight: 500;
   font-size: 4rem;
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
   height: 100%;
   animation: rotate 12s linear infinite;
   /* color: #060F1A; */
-  color: #EAE4CC;
+  color: #333;
 }
 .circle-view svg text {
   font-size: 22px !important;
@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 .circle-view:hover svg {
   /* animation-duration: 8s;  */
   /* color: #060F1A; */
-  color: #EAE4CC;
+  color: #8F5E68;
 }
 .center-arrow {
   position: absolute;
@@ -213,7 +213,7 @@ body::-webkit-scrollbar {
   font-size: 2rem;
   font-weight: 300;
   /* color: #000; */
-  color: #EAE4CC;
+  color: #333;
   z-index: 2;
   transition: transform 0.3s ease;
 }
@@ -259,7 +259,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 .wrap-section h3 {
-  color: #EAE4CC;
+  color: #333;
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 1.5rem;
@@ -278,15 +278,15 @@ body::-webkit-scrollbar {
   font-size: 1.25rem;
   font-weight: 400;
   /* color: #333333; */
-  color: rgba(254, 253, 252, 0.598);
+  color: #333333b7;
   margin: 0;
   letter-spacing: -0.01em;
 }
 .buy-btn {
   /* background: #060F1A; */
-  background-color: #EAE4CC;
+  background-color: #8F5E68;
   /* color: #EAE4CC; */
-  color: #060F1A;
+  color: #EBE6E6;
   border: none;
   padding: 0.75rem 10rem;
   font-family: DM Sans;
@@ -300,9 +300,9 @@ body::-webkit-scrollbar {
 .buy-btn:hover {
   /* background: #000; */
   transform: scale(1.02);
-  background: transparent;
-  border: 1px solid #EAE4CC;
-  color: #EAE4CC;
+  background: #000;
+  border: none;
+  color: #EBE6E6;
 }
 .buy-btn:active {
   transform: scale(0.98);
@@ -317,10 +317,10 @@ body::-webkit-scrollbar {
 .faq-title {
   font-size: 60px;
   font-family: 'Wittgenstein', serif;
-  color: #EAE4CC;
+  color: #000;
   font-weight: 500;
   margin-bottom: 2rem;
-  padding-left: 0; /* Removed padding-left since it's handled by container */
+  padding-left: 0; 
 }
 .faq-container {
   font-family: 'DM Sans', sans-serif;
@@ -330,10 +330,10 @@ body::-webkit-scrollbar {
 .faq-item {
   padding: 30px 0;
   margin-bottom: 0;
-  border-bottom: 1px solid #EAE4CC;
+  border-bottom: 1px solid #333333b7;
 }
 .faq-item:last-child {
-  border-bottom: 1px solid #EAE4CC; /* Keep border on last item */
+  border-bottom: 1px solid #333333b7;
 }
 .faq-question-container {
   display: flex;
@@ -347,7 +347,7 @@ body::-webkit-scrollbar {
   margin: 0;
   flex: 1;
   line-height: 1.4;
-  color: #EAE4CC;
+  color: #333;
   font-family: 'DM Sans', sans-serif;
 }
 .faq-toggle-btn {
@@ -363,7 +363,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #EAE4CC;
+  color: #000;
   transition: transform 0.2s ease;
 }
 .faq-toggle-btn:hover {
@@ -378,7 +378,7 @@ body::-webkit-scrollbar {
   text-align: left;
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
-  color: rgba(254, 253, 252, 0.598);
+  color: #333333b7;
   margin: 0;
   line-height: 1.6;
 }
@@ -431,7 +431,7 @@ body::-webkit-scrollbar {
     border: none;
     font-family: DM Sans;
     font-size: 0.9rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333;
     cursor: pointer;
     margin-bottom: 32px;
     padding: 0;
@@ -439,7 +439,7 @@ body::-webkit-scrollbar {
 }
 
 .sp-back:hover {
-    color: #EAE4CC;
+    color: #000;
 }
 
 /* Layout */
@@ -502,7 +502,7 @@ body::-webkit-scrollbar {
 }
 
 .sp-title {
-    color: #EAE4CC;
+    color: #333;
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.2;
@@ -512,13 +512,13 @@ body::-webkit-scrollbar {
 .sp-price {
     font-size: 1.2rem;
     font-weight: 400;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     margin: 0;
 }
 
 .sp-description {
     font-size: 0.95rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     line-height: 1.7;
     margin: 0;
 }
@@ -556,7 +556,8 @@ body::-webkit-scrollbar {
 .sp-qty-btn {
     width: 36px;
     height: 40px;
-    background: #EAE4CC;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
@@ -565,14 +566,14 @@ body::-webkit-scrollbar {
 
 .sp-qty-btn:hover {
     background: #060F1A;
-    color: #EAE4CC;
+    color: #EBE6E6;
     border: 1px solid #EAE4CC;
 }
 
 .sp-qty-value {
     width: 48px;
     text-align: center;
-    color: #EAE4CC;
+    color: #333;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -581,8 +582,8 @@ body::-webkit-scrollbar {
 .sp-order-btn {
     flex: 1;
     padding: 12px 24px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 0.9rem;
     cursor: pointer;
@@ -591,8 +592,7 @@ body::-webkit-scrollbar {
 
 .sp-order-btn:hover:not(:disabled) {
     background: #060F1A;
-    color: #EAE4CC;
-    border: 1px solid #EAE4CC;
+    color: #EBE6E6;
 }
 
 .sp-order-btn:disabled {
@@ -632,7 +632,7 @@ body::-webkit-scrollbar {
 /* ── Reviews ── */
 .sp-reviews {
     margin-top: 60px;
-    border-top: 1px solid #e8e8e8;
+    border-top: 1px solid #333333b7;;
     padding-top: 40px;
     width: 100%;
     box-sizing: border-box;
@@ -643,7 +643,7 @@ body::-webkit-scrollbar {
     font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 28px;
-    color: #EAE4CC;
+    color: #333;
 }
 
 /* Review form */
@@ -659,7 +659,7 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 16px;
-    color: #EAE4CC;
+    color: #333;
 }
 
 .sp-review-input {
@@ -684,8 +684,8 @@ body::-webkit-scrollbar {
     font-family: DM Sans;
     margin-top: 12px;
     padding: 10px 24px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 0.85rem;
     cursor: pointer;
@@ -694,8 +694,7 @@ body::-webkit-scrollbar {
 
 .sp-review-btn:hover {
     background: #060F1A;
-    color: #EAE4CC;
-    border: 1px solid #EAE4CC;
+    color: #EBE6E6;
 }
 
 /* Stars */
@@ -719,7 +718,7 @@ body::-webkit-scrollbar {
 /* Review cards */
 .sp-review-card {
     padding: 20px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #333333b7;;
 }
 
 .sp-review-header {
@@ -732,12 +731,12 @@ body::-webkit-scrollbar {
 .sp-review-author {
     font-weight: 600;
     font-size: 0.9rem;
-    color: #EAE4CC;
+    color: #333;
 }
 
 .sp-review-comment {
     font-size: 0.9rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     line-height: 1.6;
     margin: 6px 0;
 }
@@ -756,18 +755,17 @@ body::-webkit-scrollbar {
 
 .sp-review-edit-btn {
     padding: 6px 14px;
-    background: #EAE4CC;
+    background: #8F5E68;
     border: none;
-    color: #060F1A;
+    color: #EBE6E6;
     font-size: 0.8rem;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
 .sp-review-edit-btn:hover {
-    background: transparent;
-    color: #EAE4CC;
-    border: 1px solid #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .sp-review-delete-btn {
@@ -816,13 +814,13 @@ body::-webkit-scrollbar {
     font-family: Wittgenstein;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     margin: 0 0 8px 0;
 }
 
 /* Card */
 .settings-card {
-    border: 1px solid #e8e8e8;
+    border: 1px solid #333333b7;
     border-radius: 10px;
     padding: 24px;
     font-family: DM Sans;
@@ -839,7 +837,7 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     font-weight: 600;
     margin: 0 0 20px 0;
-    color: #EAE4CC;
+    color: #333;
 }
 
 .settings-card-header .settings-section-title {
@@ -858,7 +856,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 16px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #333333b7;;
 }
 
 .settings-info-row:last-child {
@@ -868,13 +866,13 @@ body::-webkit-scrollbar {
 
 .settings-info-label {
     font-size: 0.85rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     font-weight: 500;
 }
 
 .settings-info-value {
     font-size: 0.9rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     font-weight: 500;
 }
 
@@ -888,7 +886,7 @@ body::-webkit-scrollbar {
 }
 
 .settings-role-badge.admin {
-    background: #fff3e0;
+    background: #000;
     color: #e65100;
 }
 
@@ -900,8 +898,8 @@ body::-webkit-scrollbar {
 /* Edit button */
 .settings-edit-btn {
     padding: 6px 16px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-family: DM Sans;
     font-size: 0.85rem;
@@ -910,9 +908,8 @@ body::-webkit-scrollbar {
 }
 
 .settings-edit-btn:hover {
-    background: transparent;
-    border: 1px solid #EAE4CC;
-    color: #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 /* Form */
@@ -931,12 +928,12 @@ body::-webkit-scrollbar {
 .settings-field label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #EAE4CC;
+    color: #333;
 }
 
 .settings-input {
     padding: 10px 14px;
-    border: 1px solid #ddd;
+    border: 1px solid #333333b7;
     border-radius: 6px;
     font-size: 0.9rem;
     font-family: inherit;
@@ -946,7 +943,7 @@ body::-webkit-scrollbar {
 
 .settings-input:focus {
     outline: none;
-    border-color: #572C1B;
+    border-color: #333;
 }
 
 .settings-form-actions {
@@ -957,8 +954,8 @@ body::-webkit-scrollbar {
 
 .settings-save-btn {
     padding: 10px 24px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-family: DM Sans;
     font-size: 0.85rem;
@@ -967,24 +964,23 @@ body::-webkit-scrollbar {
 }
 
 .settings-save-btn:hover {
-    background: transparent;
-    border: 1px solid #EAE4CC;
-    color: #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .settings-cancel-btn {
     padding: 10px 20px;
     background: transparent;
-    border: 1px solid #ccc;
-    color: rgba(254, 253, 252, 0.598);
+    border: 1px solid #9e9c9c;
+    color: #333;
     font-family: DM Sans;
     font-size: 0.85rem;
     cursor: pointer;
 }
 
 .settings-cancel-btn:hover {
-    border-color: #999;
-    color: #EAE4CC;
+    border-color: #333;
+    color: #000;
 }
 
 /* Account actions */
@@ -999,7 +995,7 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #333333b7;
 }
 
 .settings-action-row:last-child {
@@ -1010,7 +1006,7 @@ body::-webkit-scrollbar {
 .settings-action-label {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #333;
     margin: 0 0 4px 0;
 }
 
@@ -1023,8 +1019,8 @@ body::-webkit-scrollbar {
 .settings-logout-btn {
     padding: 8px 18px;
     background: transparent;
-    border: 1px solid #EAE4CC;
-    color: rgba(254, 253, 252, 0.598);
+    border: 1px solid #9e9c9c;
+    color: #333;
     font-family: DM Sans;
     font-size: 0.85rem;
     cursor: pointer;
@@ -1033,8 +1029,8 @@ body::-webkit-scrollbar {
 }
 
 .settings-logout-btn:hover {
-    background: #EAE4CC;
-    color: #060F1A;
+    color: #000;
+    border-color: #333;
 }
 
 .settings-delete-btn {
@@ -1081,7 +1077,7 @@ body::-webkit-scrollbar {
     font-family: Wittgenstein;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     margin: 0;
 }
 
@@ -1105,7 +1101,7 @@ body::-webkit-scrollbar {
 
 .mu-search:focus {
     outline: none;
-    border-color: #572C1B;
+    border-color: #000;
 }
 
 /* Table */
@@ -1122,7 +1118,7 @@ body::-webkit-scrollbar {
 .mu-table th {
     text-align: left;
     padding: 12px 16px;
-    background: #EAE4CC;
+    background: #cdcaca;
     border-bottom: 2px solid #e8e8e8;
     font-family: DM Sans;
     font-weight: 600;
@@ -1133,8 +1129,8 @@ body::-webkit-scrollbar {
 .mu-table td {
     font-family: DM Sans;
     padding: 14px 16px;
-    border-bottom: 1px solid #f0f0f0;
-    color: rgba(254, 253, 252, 0.598);
+    border-bottom: 1px solid #333333b7;
+    color: #333333b7;
     vertical-align: middle;
 }
 

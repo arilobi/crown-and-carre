@@ -18,7 +18,6 @@
     font-family: 'DM Sans';
     display: flex;
     flex-direction: column;
-    border: 1px solid #EAE4CC;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -58,7 +57,7 @@
 }
 
 .store-card-title {
-    color: #EAE4CC;
+    color: #333;
     font-size: 1rem;
     font-weight: 500;
     margin: 0;
@@ -71,7 +70,7 @@
 }
 
 .store-card-price {
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     font-size: 0.95rem;
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -80,8 +79,8 @@
 
 .store-card-btn {
     padding: 10px 18px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 0.8rem;
     cursor: pointer;
@@ -93,9 +92,8 @@
 
 .store-card-btn:hover:not(:disabled) {
     transform: scale(1.02);
-    border: 1px solid #EAE4CC;
     background: #060F1A;
-    color: #EAE4CC;
+    color: #EBE6E6;
 }
 
 .store-card-btn:active {
@@ -119,8 +117,8 @@
 
 .store-page-btn {
     padding: 8px 14px;
-    border: 1px solid #EAE4CC;
-    background: white;
+    border: 1px solid #333;
+    background: #8F5E68;
     cursor: pointer;
     font-family: DM Sans;
     font-size: 14px;
@@ -129,14 +127,12 @@
 
 .store-page-btn:hover:not(:disabled) {
     background: #060F1A;
-    color: #fff;
-    border-color: #EAE4CC;
+    color: #EBE6E6;
 }
 
 .store-page-btn.active {
     background: #060F1A;
-    color: #EAE4CC;
-    border-color: #EAE4CC;
+    color: #EBE6E6;
 }
 
 .store-page-btn:disabled {
@@ -213,7 +209,7 @@
 .wish-title {
     font-size: 1.8rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     font-family: 'Wittgenstein', serif;
     letter-spacing: -0.02em;
 }
@@ -221,8 +217,7 @@
 .wish-clear-btn {
     padding: 8px 18px;
     background: transparent;
-    border: 1px solid #ccc;
-    color: #666;
+    color: #333;
     font-size: 0.85rem;
     cursor: pointer;
     border-radius: 100px;
@@ -244,8 +239,7 @@
 
 .wish-card {
     display: flex;
-    /* background-color: #fff; */
-    border: 1px solid #EAE4CC;
+    background-color: #EBE6E6;
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
@@ -310,13 +304,13 @@
 .wish-card-title {
     font-size: 1rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #333;
     margin: 0;
 }
 
 .wish-card-desc {
     font-size: 0.85rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     margin: 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;  
@@ -334,13 +328,13 @@
 .wish-card-price {
     font-size: 0.95rem;
     font-weight: 400;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
 }
 
 .wish-card-btn {
     padding: 8px 18px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 0.8rem;
     cursor: pointer;
@@ -351,7 +345,6 @@
 }
 
 .wish-card-btn:hover:not(:disabled) {
-    border: 1px solid #EAE4CC;
     background-color: #060F1A;
     color: #EAE4CC;
 }
@@ -413,7 +406,6 @@
     max-width: 1000px;
     min-height: 80vh;
     margin: 0 auto;
-    color: #1a1a1a;
     font-family: DM Sans;
 }
 
@@ -428,21 +420,21 @@
     background: none;
     border: none;
     font-size: 0.9rem;
-    color: #666;
+    color: #333333b7;
     cursor: pointer;
     padding: 0;
     transition: color 0.2s ease;
 }
 
 .ap-back:hover {
-    color: #1a1a1a;
+    color: 000;
 }
 
 .ap-title {
     font-family: 'Wittgenstein', serif;
     font-size: 1.6rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     margin: 0;
     margin-bottom: 2rem;
 }
@@ -457,7 +449,7 @@
 .ap-image-drop {
     width: 100%;
     aspect-ratio: 3/4;
-    border: 2px dashed #EAE4CC;
+    border: 2px dashed #333333b7;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -468,7 +460,7 @@
 }
 
 .ap-image-drop:hover {
-    border-color: #fff;
+    border-color: #000;
 }
 
 .ap-preview {
@@ -482,14 +474,14 @@
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     text-align: center;
     padding: 20px;
 }
 
 .ap-upload-icon {
     font-size: 2.5rem;
-    color: #ccc;
+    color: #333333b7;
 }
 
 .ap-image-placeholder p {
@@ -500,7 +492,7 @@
 
 .ap-image-placeholder span {
     font-size: 0.75rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
 }
 
 .ap-remove-img {
@@ -534,7 +526,7 @@
 .ap-field label {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #EAE4CC;
+    color: #333;
 }
 
 .ap-field label span {
@@ -570,8 +562,8 @@
 .ap-submit-btn {
     margin-top: 8px;
     padding: 14px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-family: DM Sans;
     font-size: 0.95rem;
@@ -581,9 +573,8 @@
 }
 
 .ap-submit-btn:hover:not(:disabled) {
-    background: transparent;
-    border: 1px solid #EAE4CC;
-    color: #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .ap-submit-btn:disabled {
@@ -617,7 +608,7 @@
     font-family: Wittgenstein;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     margin: 0;
 }
 
@@ -631,8 +622,8 @@
 
 .mp-add-btn {
     padding: 10px 20px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     font-size: 0.9rem;
     cursor: pointer;
@@ -640,9 +631,8 @@
 }
 
 .mp-add-btn:hover {
-    background: transparent;
-    border: 1px solid #EAE4CC;
-    color: #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .mp-search {
@@ -671,7 +661,7 @@
 .mp-table th {
     text-align: left;
     padding: 12px 16px;
-    background: #EAE4CC;
+    background: #cdcaca;
     font-family: DM Sans;
     font-weight: 600;
     color: #060F1A;
@@ -681,8 +671,8 @@
 .mp-table td {
     font-family: DM Sans;
     padding: 14px 16px;
-    border-bottom: 1px solid #f0f0f0;
-    color: rgba(254, 253, 252, 0.598);
+    border-bottom: 1px solid #333333b7;
+    color: #333333b7;
     vertical-align: middle;
 }
 
@@ -734,8 +724,8 @@
 .mp-edit-btn {
     padding: 6px 14px;
     border: none;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     font-family: DM Sans;
     font-size: 0.8rem;
     cursor: pointer;
@@ -743,9 +733,8 @@
 }
 
 .mp-edit-btn:hover {
-    background: transparent;
-    color: #EAE4CC;
-    border: 1px solid #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .mp-delete-btn {
@@ -766,10 +755,10 @@
 
 .mp-save-btn {
     padding: 6px 14px;
-    background: #572C1B;
+    background: #8F5E68;
     border: none;
-    color: #fff;
-    border-radius: 4px;
+    color: #EBE6E6;
+    font-family: DM Sans;
     font-size: 0.8rem;
     cursor: pointer;
     transition: background 0.2s ease;
@@ -784,7 +773,7 @@
     background: transparent;
     border: 1px solid #ccc;
     color: #666;
-    border-radius: 4px;
+    font-family: DM Sans;
     font-size: 0.8rem;
     cursor: pointer;
 }

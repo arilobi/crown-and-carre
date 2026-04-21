@@ -18,14 +18,14 @@
     font-family: Wittgenstein;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #EAE4CC;
+    color: #000;
     margin: 0;
 }
 
 .mo-count {
     font-family: DM Sans;
     font-size: 0.85rem;
-    color: #888;
+    color: #333333b7;
     background: #f5f5f5;
     padding: 4px 12px;
     border-radius: 100px;
@@ -45,7 +45,7 @@
 .mo-table th {
     text-align: left;
     padding: 12px 16px;
-    background: #EAE4CC;
+    background: #cdcaca;
     font-family: DM Sans;
     font-weight: 600;
     color: #060F1A;
@@ -55,8 +55,8 @@
 .mo-table td {
     font-family: DM Sans;
     padding: 14px 16px;
-    border-bottom: 1px solid #f0f0f0;
-    color: rgba(254, 253, 252, 0.598);
+    border-bottom: 1px solid #333;
+    color: #333333b7;
 }
 
 .mo-table tr:hover td {
@@ -70,7 +70,7 @@
 }
 
 .mo-card {
-    border: 1px solid #e8e8e8;
+    border: 1px solid #333333b7;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
@@ -110,7 +110,7 @@
 
 .mo-card-detail {
     font-size: 0.85rem;
-    color: #666;
+    color: #333;
     margin: 0;
 }
 
@@ -163,8 +163,8 @@
 .mo-shop-btn {
     margin-top: 16px;
     padding: 10px 24px;
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     border-radius: 6px;
     font-size: 0.9rem;
@@ -173,9 +173,8 @@
 }
 
 .mo-shop-btn:hover {
-    background: transparent;
-    border: 1px solid #EAE4CC;
-    color: #060F1A;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .mo-table-img {
@@ -202,14 +201,13 @@
 
 .mo-grand-total {
     font-size: 1rem;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
 }
 
 .mo-grand-total strong {
     font-size: 1.2rem;
-    color: rgba(254, 253, 252, 0.598);
     margin-left: 0.5rem;
-    background: #EAE4CC;
+    background: #333333b7;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -217,8 +215,8 @@
 }
 
 .mo-checkout-btn {
-    background: #EAE4CC;
-    color: #060F1A;
+    background: #8F5E68;
+    color: #EBE6E6;
     border: none;
     padding: 0.6rem 2rem;
     font-size: 0.9rem;
@@ -230,9 +228,8 @@
 
 .mo-checkout-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    background: transparent;
-    color: #EAE4CC;
-    border: 1px solid #EAE4CC;
+    background: #000;
+    color: #EBE6E6;
 }
 
 .mo-checkout-btn:active:not(:disabled) {
@@ -268,7 +265,7 @@
     align-items: center;
     justify-content: center;
     min-height: 40vh;
-    color: rgba(254, 253, 252, 0.598);
+    color: #333333b7;
     font-family: DM Sans;
     font-size: 0.95rem;
 }

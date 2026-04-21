@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+/* #8F5E68 */
+/* color: #333333b7; */
 :root {
-  --bg: #060F1A;
-  --surface: #572C1B;
+  --bg: #EBE6E6;
   --border: rgba(255,255,255,0.08);
-  --accent: #572C1B;
-  --text: #f0ede8;
   --muted: rgba(240, 237, 232, 0.45);
 }
 
@@ -32,7 +30,11 @@ body {
 }
 
 .navbar:not(.scrolled) .nav-links a {
-  color: #EAE4CC;
+  color: #333;
+}
+
+.navbar.scrolled .nav-links a {
+  color: #333;
 }
 
 .navbar:not(.scrolled) .nav-links a:hover {
@@ -41,7 +43,7 @@ body {
 
 /* HAMBURGER */
 .navbar:not(.scrolled) .hamburger span {
-  background: #EAE4CC;
+  background: #8F5E68;
 }
 
 .navbar:not(.scrolled) .nav-cta {
@@ -51,11 +53,11 @@ body {
 
 .navbar:not(.scrolled) .nav-cta:hover {
   background: #333 !important;
-  color: #EAE4CC !important;
+  color: #333 !important;
 }
 
 .navbar.scrolled {
-  background: #060F1A !important;
+  /* background: #8F5E68 !important; */
   border-color: var(--border);
   box-shadow: 0 8px 40px rgba(0,0,0,0.4);
   backdrop-filter: blur(16px);
@@ -82,14 +84,6 @@ body {
   width: 10rem;
 }
 
-.logo-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #EAE4CC;
-  display: inline-block;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -101,7 +95,7 @@ body {
   font-family: 'DM Sans';
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--muted);
+  color: #333;
   text-decoration: none;
   padding: 0.5rem 0.9rem;
   border-radius: 100px;
@@ -110,15 +104,15 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--text);
+  color: #333;
   background: rgba(255,255,255,0.06);
 }
 
 .nav-cta {
   margin-left: 0.75rem;
   padding: 0.5rem 1.25rem !important;
-  background: #EAE4CC;
-  color: #0a0a0a !important;
+  background: #8F5E68;
+  color: #EBE6E6 !important;
   font-weight: 600 !important;
   border-radius: 100px !important;
   transition: opacity 0.2s, transform 0.2s !important;

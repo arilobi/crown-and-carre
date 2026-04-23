@@ -1,7 +1,7 @@
 # E-commerce - Crown and Carre
 ## By Marion Nabulobi
 
-Crown and Carre is a full-stack journal application designed as an e-commerce to enable users to browse and purchase art prints. It pairs a smooth, responsive interface with a secure and efficient backend, creating a seamless shopping experience from end to end.
+Crown and Carre is a full-stack e-commerce application designed to enable users to browse and purchase art prints. It pairs a smooth, responsive interface with a secure and efficient backend, creating a seamless shopping experience from end to end.
 
 ## Overview
 The frontend is crafted with React, using the Context API to manage shared state across the application. On the backend, Flask, Python, and SQLAlchemy work together to handle data persistence, authentication, and all server-side operations.
